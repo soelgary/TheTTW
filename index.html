@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="/static/css/main.css">
+
+  </head>
+  <body>
+    
+    <!-- Static navbar -->
+    <nav id="nav" class="tab-pane fade in active navbar navbar-default navbar-fixed-top transparent" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        
+          <a class="navbar-brand" href="">The TTW</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div id="background" class="wide">
+    
+    </div>
+
+    <div id="about" class="container">
+      <div class="row padding">
+        <div class="col-lg-12">
+          <h1 class="text-center">The TTW</h1>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <p>Designed for all your tailgating needs, The TTW is the only product that is meant for you to tailgate class. Included are coolers, a TV, a grill, speakers, and wheels to move to the prime tailgating location. Be the guy that tailgates every class next semester with The TTW(patent pending)</p>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+
+    <div class="row padding">
+        <div class="col-lg-12">
+          <h1 class="text-center">Donate</h1>
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 text-center">
+          <p>We are currently accepting donations so we can complete production of our beta TTW's.</p>
+          <p><button type="button" class="btn btn-primary">Donate</button></p>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+
+      <footer>
+        <div class="row padding">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 text-center">
+            <p>The TTW Patent Pending | Boston MA</p>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+      </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        //$('#nav').fadeIn('slow');
+      });
+
+      $(window).scroll( function() {
+        var value = $(this).scrollTop();
+        if ( value > 10 ) {
+          $("#nav").removeClass("transparent");
+          console.log('derping');
+        }
+        else {
+          $("#nav").addClass("transparent");
+          console.log('more derping');
+        }
+      });
+    </script>
+  </body>
+</html>
